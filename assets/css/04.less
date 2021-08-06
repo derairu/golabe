@@ -1,0 +1,431 @@
+//banner
+.banner{
+    padding: 0;
+    background: #009688;
+
+    #container{
+        .coner{
+            display: flex;
+            justify-content: space-between;
+
+            .leftbox{
+                padding: 6em 0;
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                .txt1{
+                    p{
+                    font-size: 60px;
+                    color: #fff;
+                    font-family: OSLight;
+                    }
+                    span{
+                        color: #fff;
+                    }
+                    
+
+                }
+                .txt2{
+                    margin: 0 2em;
+                    p{
+                    font-size: 40px;
+                    color: #fff;
+                    font-family: OSLight;
+                    }
+                    span{
+                        color: #fff;
+                        flex-wrap: wrap ;
+                    }
+                    
+                }
+            }
+            .right{
+                padding: 6em 0 0 0;
+            }
+        }
+    }
+
+    @media screen and (max-width:1010px) {
+        #container{
+            .right{
+                .btum{
+                    width: 80%;
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:985px) {
+        #container{
+            .right{
+                .btum{
+                    width: 144%;
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:768px) {
+        #container{
+
+            .right{
+                .btum{
+                    width: 105%;
+                    margin-top: 4em;
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:700px) {
+        #container{
+
+            .coner{
+                .right{
+                    display: none;
+                }
+            }
+
+        }
+        
+    }
+
+    @media screen and (max-width:375px) {
+        #container{
+
+            .coner{
+                .leftbox{
+                    .txt2 p{
+                        font-size: 25px;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+        }
+        
+    }
+
+    @media screen and (max-width:320px) {
+        #container{
+
+            .coner{
+                .leftbox{
+                    flex-wrap: wrap;
+                    text-align: center;
+
+                    .txt1{
+                        width: 100%;
+                    }
+                    .txt2 p{
+                        font-size: 25px;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
+
+//work
+.work{
+    background: #008d80;
+    #container{
+        .list{
+            padding: 2em 0;
+
+            ul a{
+                margin: 0 3em;
+                color: #fff;
+
+                &:hover{
+                    color: pink;
+                }
+            }
+
+        }
+    }
+}
+
+//emt
+.emt{
+    #container{
+        .title{
+            text-align: center;
+            p{
+                padding: 3em 0 0 0;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: OSLight;
+            }
+            span{
+                font-family: OSLight;
+
+            }
+        }
+        .conter{
+            margin-top: 8em;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+
+            .tct{
+                margin-top: 2em;
+                font-family: OSLight;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 0 0 4em 0;
+            }
+        }
+    }
+    @media screen and (max-width:460px) {
+        #container{
+                .conter{
+                    margin-top: 2em;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    .item{
+                        width: 100%;
+                    }
+                }
+        }
+        
+    }
+
+}
+//endil
+.endil{
+    #container{
+        .box{
+            width: 450px;
+            height: 500px;
+            margin-bottom: 4em;
+            background: #fafafa;
+            text-align: center;
+            margin: 0 auto;
+
+            .inp1{
+                padding: 6em 0 0 0;
+                input{
+                    width: 80%;
+                    height: 50px;
+                    margin-bottom: 2em;
+                }
+            }
+
+            .inp2{
+                input{
+                    width: 80%;
+                    height: 50px;
+                    margin-bottom: 2em;
+                }
+            }
+            .inp3{
+                input{
+                    width: 80%;
+                    height: 50px;
+                    margin-bottom: 2em;
+                }
+            }
+            .inp4{
+                input{
+                    width: 80%;
+                    height: 50px;
+                    margin-bottom: 2em;
+                }
+            }
+            .inp5{
+                margin-bottom: 1em;
+            }
+            .inp6{
+                width: 180px;
+                height: 20px;
+                border-radius: 20%;
+                background: #000;
+                margin: 0 auto;
+                transition: all linear .2s;
+                span{
+                    color: #fff;
+                }
+
+                &:hover{
+                    transform:translateY(-7px);
+                    box-shadow: 0px 15px 15px pink;
+                    cursor: pointer;
+
+                }
+                
+                
+
+            }
+        }
+    }
+    @media screen and (max-width:450px) {
+        #container{
+            .box{
+                width: 260px;
+                height: 400px;
+                margin-bottom: 5em;
+                
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:400px) {
+        #container{
+            .box{
+                width: 260px;
+                height: 400px;
+                margin-bottom: 5em;
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:320px) {
+        #container{
+            .box{
+                width: 260px;
+                height: 400px;
+            }
+        }
+        
+    }
+}
+
+// fonnt
+.fonnt{
+    color:#000;
+    padding:1em 0em 2em;
+
+    .subject{
+        text-align: center;
+        padding-bottom:1.5em;
+        margin-bottom:6em;
+
+        .title{
+            font-family: OSLight;
+            font-size:3em;
+            text-transform: uppercase;
+
+            span{
+                font-family: OSLight;
+            }
+        }
+    }
+
+    .infolist{
+        position: relative;
+        height:15em;
+        width:80%;
+        margin:0 auto;
+
+        input{
+            display: none;
+        }
+
+        input:checked + .info{
+            opacity: 1;
+            z-index:1;
+
+        }
+
+        #info1:checked ~ .morebox label[for="info1"],#info2:checked ~ .morebox label[for="info2"],#info3:checked ~ .morebox label[for="info3"]{
+            background-color:pink;
+        }
+
+        .info{
+            position: absolute;
+            top:0;
+            width:100%;
+            text-align: center;
+            text-transform: uppercase;
+            opacity: 0;
+            z-index:-1;
+
+            transition:all linear .3s;
+    
+            .content{
+                color:#000;
+                font-family: OSBold;
+                font-size:1.2em;
+                margin-bottom:2em;
+            }
+    
+            .name{
+                font-family: OSLight;
+                color:#999999;
+                font-size:1.1em;
+    
+                span{
+                    font-family: OSBold;
+                }
+            }
+        }
+
+        .morebox{
+            position: absolute;
+            width:100%;
+            bottom:0;
+            left:0;
+
+            .more{
+                display: flex;
+                width:6%;
+                justify-content: space-around;
+                margin:0 auto;
+        
+                label{
+                    display: inline-block;
+                    width:.8em;
+                    height:.8em;
+                    background-color:pink;
+                    cursor: pointer;
+                    transition:all linear .3s;
+                }
+        
+                label:hover{
+                    background-color:pink;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1000px) {
+        .infolist{
+            .morebox{
+                .more{
+                    width: 20%;
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:700px) {
+        .infolist{
+            .morebox{
+                .more{
+                    width: 20%;
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width:400px) {
+        .infolist{
+            .info{
+                .name{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}

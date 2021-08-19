@@ -60,15 +60,26 @@
 // fot
 .fot{
     background: #fafafa;
-    padding-bottom: 6em;
+    padding-bottom: 3em;
     text-align: center;
 
     .cont .btm img{
+        margin-top: 3em;
         margin-left: 5em;
 
         &:hover{
             cursor: pointer;
         }
+    }
+    @media screen and(max-width:500px) {
+        &{
+            margin-bottom: 1em;
+            .cont .btm img{
+                margin: 0 auto;
+                margin-top: 2em;
+            }
+        }
+        
     }
 }
 
@@ -182,6 +193,7 @@
         #contact{
             margin-top: 8em;
             color: #ccc;
+            padding-bottom: 3em;
             
         }
     }
@@ -192,6 +204,9 @@
 
             .leftbox{
                 width: 100%;
+            }
+            #contact{
+                margin-top: 1em;
             }
         }
         

@@ -50,7 +50,11 @@
             width: 120px;
             height: 30px;
             background: #000;
-            border-radius: 20%;
+            border-top-left-radius:100px 80px;
+            border-top-right-radius:100px 90px;
+            border-bottom-left-radius:100px 80px;
+            border-bottom-right-radius:100px 90px;
+
             transition: all linear .2s;
 
             span{
@@ -58,7 +62,7 @@
             }
 
             &:hover{
-                transform:translateY(-4px);
+                transform:translateY(-7px);
                 box-shadow: 0px 5px 15px pink;
                 cursor: pointer;
             }
@@ -168,6 +172,23 @@
         }
         
     }
+
+    @media screen and (max-width:447px) {
+        .contre{
+
+            .item{
+                .bum{
+                    margin-right: 1em;
+                }
+                .bt{
+                    .shang{
+                        font-size: 5px;
+                    }
+                }
+            }
+        }
+        
+    }
 }
 
 //emt
@@ -220,17 +241,25 @@
 
             }
             .dibu{
-                width: 100px;
+                width: 120px;
                 height: 30px;
-                border-radius: 20%;
-                background: #000;
+                border-top-left-radius:100px 80px;
+                border-top-right-radius:100px 90px;
+                border-bottom-left-radius:100px 80px;
+                border-bottom-right-radius:100px 90px;
+
+                
                 color: #fff;
+                background: #000;
 
                 transition: all linear .2s;
+                span{
+                    color: #fff;
+                }
 
                 &:hover{
                     transform:translateY(-7px);
-                    box-shadow: 0px 15px 15px pink;
+                    box-shadow: 0px 5px 15px pink;
                     cursor: pointer;
                 }
             }
@@ -245,6 +274,7 @@
                         width: 140%;
                     }
                 }
+                
             }
         }
         
@@ -296,6 +326,14 @@
                     .bg{
                         width: 80%;
                         text-align: center;
+                        margin: 0 auto;
+                        padding: 1em;
+                        
+
+                        img{
+                            width: 60%
+                            
+                        }
                     }
                 }
             }
@@ -303,6 +341,19 @@
                 .dibu{
                     margin-bottom: 2em;
                     width: 100%;
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width:455px) {
+        .bigbox{
+            
+            
+            .list{
+                margin-top: 0;
+                .tax1{
+                    font-size: 20px;
                 }
             }
         }
@@ -369,7 +420,11 @@
                         width: 200px;
                         height: 30px;
                         background: #ccdb38;
-                        border-radius: 20%;
+                        border-top-left-radius:100px 80px;
+                        border-top-right-radius:100px 90px;
+                        border-bottom-left-radius:100px 80px;
+                        border-bottom-right-radius:100px 90px;
+
                         color: #fff;
                         margin-top: 1em;
                         margin-bottom: 1em;
@@ -410,7 +465,11 @@
                         width: 200px;
                         height: 30px;
                         background: #8bc34a;
-                        border-radius: 20%;
+                        border-top-left-radius:100px 80px;
+                        border-top-right-radius:100px 90px;
+                        border-bottom-left-radius:100px 80px;
+                        border-bottom-right-radius:100px 90px;
+
                         color: #fff;
                         margin-top: 1em;
                         margin-bottom: 1em;
@@ -451,7 +510,11 @@
                         width: 200px;
                         height: 30px;
                         background: #4caf50;
-                        border-radius: 20%;
+                        border-top-left-radius:100px 80px;
+                        border-top-right-radius:100px 90px;
+                        border-bottom-left-radius:100px 80px;
+                        border-bottom-right-radius:100px 90px;
+
                         color: #fff;
                         margin-top: 1em;
                         margin-bottom: 1em;
@@ -492,7 +555,11 @@
                         width: 200px;
                         height: 30px;
                         background: #009688;
-                        border-radius: 20%;
+                        border-top-left-radius:100px 80px;
+                        border-top-right-radius:100px 90px;
+                        border-bottom-left-radius:100px 80px;
+                        border-bottom-right-radius:100px 90px;
+
                         color: #fff;
                         margin-top: 1em;
                         margin-bottom: 1em;
@@ -530,7 +597,7 @@
         .list{
             .title p{
                 font-size: 25px;
-                text-align: left;
+                text-align: center;
                 font-family: OSBold;
                 margin-top: 3em;
                 margin-bottom: 1em;
@@ -569,17 +636,30 @@
     }
 
     @media screen and (max-width:700px) {
-        #clients{
-            display: flex;
-            .btm{
-                display: none;
-            }
-        }
-        
+       &{
+           .list{
+               width: 100%;
+               text-align: center;
+               margin: 0 auto;
+               padding-bottom: 3em;
+               .title p{
+                   text-align: center;
+               }
+           }
+           .btm{
+               .bg{
+                   img{
+                    display: none;
+
+                   }
+               }
+               
+           }
+
+       }
+
+
     }
-
-
-      
 }
 // fonnt
 .fonnt{
